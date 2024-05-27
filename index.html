@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossy Login Page |Disandu Perera</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #031737, #183f5d, #0d1c30);
+        }
+        
+        .form-container-wrapper {
+            background: conic-gradient(#3492D0 0%, #3492D0 20%, #00ffff 28%, #62e7e7 30%, #38d8e3 32%, #58ecf7 34%, #3492D0 60%, #4A88B0 70%, #3DCBFD 76%, #3DCBFD 78%, #3492D0 80%, #3492D0 100%);
+            border-radius: 2.5rem;
+            padding: 1px;
+            box-shadow: 0 0 50px 0 black;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .form-container {
+            background: linear-gradient(to bottom right, #1c5379, #4da0d1);
+            padding: 3rem;
+            border-radius: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .form-container::before {
+            content: '';
+            width: 1px;
+            height: 30px;
+            background: linear-gradient(to bottom, #39afe7, #8effff, #3ecafc);
+            left: 0;
+            position: absolute;
+            top: 40%;
+            box-shadow:
+                0 0 15px 5px rgba(142, 255, 255, 0.3),
+                0 0 20px 15px rgba(1, 153, 255, 0.7);
+        }
+        
+        .form-container::after {
+            content: '';
+            width: 1px;
+            height: 30px;
+            background: linear-gradient(to bottom, #19CBFB, #89FCFF, #19CBFB);
+            position: absolute;
+            top: 56%;
+            right: 0;
+            box-shadow:
+                0 0 15px 5px rgb(1 255 242 / 75%),
+                0 0 15px 15px rgb(114 255 255 / 30%),
+                0 0 20px 25px rgb(1 153 255 / 100%);
+        }
+        
+        .icon-container {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            border: 3px solid #47c9fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+        
+        .icon-camera {
+            font-size: 3rem;
+            color: #47c9fc;
+        }
+        
+        .input-wrapper {
+            position: relative;
+        }
+        
+        .input-wrapper .input-icon {
+            position: absolute;
+            color: #bcc0c2;
+            top: 8px;
+            margin-left: 15px;
+        }
+        
+        input.text-style {
+            padding: 10px 10px 10px 50px;
+            border: none;
+            background: linear-gradient(to right, #002250, #015696);
+            margin-bottom: 10px;
+            color: #d5e1f6;
+            outline: none;
+        }
+        
+        ::-webkit-input-placeholder {
+            color: #bcc0c2;
+        }
+        
+        .remember-forgot {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .lbl-remember {
+            font-size: 12px;
+            color: #bcc0c2;
+        }
+        
+        .forgot {
+            font-size: 12px;
+            color: #bcc0c2;
+            font-style: italic;
+            text-decoration: none;
+        }
+        
+        button.btn-login {
+            background: linear-gradient(to right, #002250, #015696);
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 20px;
+            color: #d6e1f6;
+            cursor: pointer;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        button.btn-login:hover{
+            background: #08328d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container-wrapper">
+            <form class="form-container">
+                <div class="icon-container">
+                    <i class="fa-solid fa-camera icon-camera"></i>
+                </div>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-user input-icon"></i>
+                    <input class="text-style" type="text" placeholder="Username">
+                </div>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-lock input-icon"></i>
+                    <input class="text-style" type="password" placeholder="Password">
+                </div>
+                <div class="remember-forgot">
+                    <div>
+                        <input type="checkbox" id="cb">
+                        <label for="cb" class="lbl-remember">Remember</label>
+                    </div>
+                    <a href="#" class="forgot">Forgot Password</a>
+                </div>
+                <button class="btn-login">LOGIN</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
